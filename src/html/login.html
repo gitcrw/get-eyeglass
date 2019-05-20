@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>登录注册_可得眼镜网</title>
+	<link rel="stylesheet" href="../css/content.css">
+	<link rel="stylesheet" href="../css/login.css">
+</head>
+<body style="background:#F0F0F0;">
+	<div id="ajax_top"></div>
+	<div id="ajax_header"></div>
+    <div style="background:#fff;">
+	<div id="login_main" >
+		<div id="login_main_info" class="content">
+			<img src="../image/login_bg.jpg" alt="">
+			<div id="login_login">
+				<div class="l_title">
+            		<span class="active" id="smdl">扫描登录</span>
+            		<span id="zhdl">账号登录</span>
+        		</div>
+        		<div class="l_content_l">
+					<div class="twocode">
+						<img src="../image/l_code.jpg">
+						<div class="codetext">
+							<i></i>
+							<span>登录 <a href="">可得眼镜app</a></span><br>
+							<span>扫一扫安全登录</span>
+						</div>
+					</div>
+					<div class="saoapp">
+						<img src="../image/sao.png" alt="">
+						<img src="../image/down_app_hover.png" alt="" id="down_app_h">
+						<img src="../image/down_app.png" alt="" id="down_app">
+					</div>
+        		</div>
+        		<div class="l_content_r" style="display: none">
+        			<div class="username">
+						<i></i><span>|</span>
+						<input type="text" id="username" placeholder="请输入您的手机、邮箱、用户名" value="" autocomplete="off">
+        			</div>
+        			<div class="password">
+        				<i></i><span>|</span>
+						<input type="password" id="password"placeholder="请输入您的密码" value="" autocomplete="off">
+        			</div>
+        			<div class="remeber">
+						<i id="remeberuser" ></i>
+						<span>记住账户</span>
+						<i id="remeberauto" ></i>
+						<span>自动登录</span>
+						<a href="">？忘记密码</a>
+        			</div>
+        			<span id="l_info"></span>
+        			<input type="button" value="登录" id="loginbtn">
+        		</div>
+        		<div class="l_qt">
+            		<a class="weixin" onclick="thirdParty('101')"></a>
+		            <a class="qq" onclick="thirdParty('5')"></a>
+		            <a class="sina" onclick="thirdParty('1')"></a>
+		            <a class="zhifubao" onclick="_toa()" id="btn-alipay"></a>
+		            <div class="toRegister"><a href="register">立即注册<i></i></a></div>
+        		</div>
+			</div>
+		</div>
+	</div>
+    </div>
+	<div id="ajax_footer"></div>
+</body>
+	<script src="../../lib/jquery-1.10.1.min.js"></script>
+	<script src="../js/login.js"></script>
+</html>
