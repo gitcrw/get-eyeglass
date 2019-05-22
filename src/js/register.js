@@ -190,13 +190,15 @@
 			
 		})
 		//判断密码
-		var regpwd = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$/;
+		// var regpwd = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,15}$/um;
 		function ispwd() {
-			if(regpwd.test($('#r_password').val())) {
+			var val = $('#r_password').val();
+			var len = $('#r_password').val().length;
+			if(/\d/.test(val) && /[a-zA-Z]/.test(val) && 5<len && 15>len) {
 				$('#r_info').html('');
 				return true;
 			}else {
-				$('#r_info').html('密码由字母、数字、字符组成，长度6-15位。');
+				$('#r_info').html('密码由字母、数字或字符组成，长度6-15位。');
 				return false;	
 			}
 		}

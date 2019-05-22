@@ -6,6 +6,7 @@ body{font-size: 12px}
 .content{
 	width: 1190px;
 	margin: 0 auto;
+    overflow:hidden;
 }
 input{outline: none;}
 .fl{
