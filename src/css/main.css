@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2019-05-21 18:59:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2019-05-22 09:03:32
+* @Last Modified time: 2019-05-25 17:10:08
 */
     #banner_bg{
         background:#ccc;
@@ -220,7 +220,6 @@
     .of_right{
         width: 218px;
         right: 3px;
-        z-index: 100;
         top: 0;
         position:absolute;
     }
@@ -317,3 +316,1022 @@
     .hot_activity .info ul a:hover{
         color:#f40;
     }
+    /*今日秒杀*/
+    #sec_kill{
+        border:1px solid #e8e8e8;
+        position:relative;
+    }
+    .sec_kill {
+        width: 210px;
+        height: 182px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        float:left;
+        
+    }
+    .sec_kill a{
+        flex:1;
+        text-align: center;
+        line-height: 91px;
+        background:url(../image/sec_kill.jpg) no-repeat ;
+    }
+    .sec_kill #val_pay_box{
+        background-position: 0px -91px;
+    }
+    .sec_kill_info ul:nth-child(1){
+        float:left;
+    }
+    .sec_kill_info ul li{
+        float:left;
+        width: 195px;
+        height: 182px;
+        text-align: center;
+    }
+    .sec_kill_info img{
+        width: 135px;
+        height: 135px;
+        display:inline-block;
+        transition: all .5s;
+    }
+    .sec_kill_info p{
+        color:#666;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .sec_kill_info span{
+        color:#f40;
+        font-size: 14px;
+    }
+    #sec_kill img:hover{
+        margin-right: 20px;
+        box-sizing: content-box;
+    }
+     .sec_kill_info ul:nth-child(2){
+        width: 975px;
+        height: 182px;
+        position: absolute;
+        top: 0;
+        left: 210px;
+     }
+     /*右侧固定菜单*/
+     #right_menu{
+        position:fixed;
+        bottom: 20px;
+        left: 50%;
+        margin-left: 600px;
+        height: 305px;
+     }
+     #right_menu ul li{
+        position:relative;
+     }
+     #right_menu ul li a{
+        display:block;
+        width: 55px;
+        height: 61px;
+        border-top: 1px solid #e8e8e8;
+        background: url(../image/tubiao.png) no-repeat -309px -597px;  
+     }
+     #right_menu ul li:nth-child(1) a:hover{
+        background-position: -364px -597px;
+     }
+    #right_menu ul li:nth-child(1) div{
+        display:none;
+        width: 198px;
+        height: 254px;
+        z-index: 100;
+        top: -175px;
+        left: -196px;
+        position:absolute;
+        background:url(../image/tubiao.png) no-repeat -111px -461px;
+    }
+     #right_menu ul li:nth-child(1):hover div{   
+        display:block;    
+     }
+     #right_menu ul li:nth-child(2) a{
+        background-position: -309px -475px;
+     }
+     #right_menu ul li:nth-child(2) a:hover{
+        background-position: -364px -475px;
+     }
+     #right_menu ul li:nth-child(3) a{
+        background-position: -309px -536px;
+     }
+     #right_menu ul li:nth-child(3) div{
+        display:none;
+        width: 198px;
+        height: 47px;
+        z-index: 100;
+        top: -4px;
+        left: -196px;
+        position:absolute;
+        background:url(../image/tubiao.png) no-repeat -111px -414px;
+     }
+     #right_menu ul li:nth-child(3):hover div{
+        display:block;
+     }
+     #right_menu ul li:nth-child(3) a:hover{
+        background-position: -364px -536px;
+     }
+     #right_menu ul li:nth-child(4) a{
+        background-position: -309px -659px;
+     }
+     #right_menu ul li:nth-child(4) a:hover{
+        background-position: -364px -659px;
+     }
+     /*all_F*/
+     #all_F a{
+        color:#666;
+        
+     }
+     #all_F img{
+        float:left;
+        transition:all .4s;
+     }
+     #all_F .title ul li:nth-child(2) a{
+        padding-left: 10px;
+        border-left: 1px solid #cccccc;
+     }
+     #all_F a:hover{
+        color:#f40;
+     }
+     #all_F .title{
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+     }
+     #all_F .title a{
+        padding-right: 11px;
+        margin-right: 11px;
+        border-right: 1px solid #cccccc;
+     }
+     #all_F h2{
+        float:left;
+        width: 210px;
+        font-size: 19px;
+     }
+     #all_F ul li{
+        float:left;
+        color:#666666;
+     }
+     #all_F .title .title_more{
+        position:absolute;
+        right: 0;
+        border:0 !important;
+        padding-right: 15px;
+        margin-right: 0;
+     }
+     #all_F .title_more i{
+        width: 13px;
+        height: 13px;
+        background: url(../image/tubiao.png) no-repeat 0px -727px;
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        right: 0px;
+     }
+     /*1F*/
+     #oneF{
+        margin-top: 40px;
+     }
+     #oneF .title{
+        border-bottom: 3px solid #aa72d2;
+     }
+     #oneF .title h2{
+        color: #aa72d2;
+     }
+     #oneF .oneF_top{
+        padding-left: 6px;
+        overflow:hidden;
+     }
+     /*轮播图*/
+    .oneF_banner_show{
+        position: relative;
+        height: 243px;
+        width: 710px;
+        overflow:hidden;
+        float:left;
+        margin-right: 6px;
+    }
+     .oneF_banner_show ul{
+        position: absolute;
+        height: 243px;
+     }
+     .oneF_banner_show ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+     }
+    .oneF_banner_show p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .oneF_banner_show p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .oneF_banner_show p span.show{
+        background:#90C221;
+    }
+    .onef_right{
+        height: 243px;
+    }
+    .oneF_content{
+        overflow:hidden;
+        background:#e9e9e9;
+        margin-top: 5px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #e9e9e9;
+    }
+    .oneF_content ul li{
+        width: 296px;
+        height: 249px;
+        margin: 1px 0px 0px 1px; 
+        padding:4px;
+        background:#fff;
+        position: relative;
+    }
+    .oneF_content ul li:nth-child(4n) {
+        width: 297px;
+    }
+    .oneF_content li span{
+        display:block;
+        position:absolute;
+        width: 288px;
+        text-align: center;
+        float:left;
+    }
+    .oneF_content li span:nth-child(2) {
+        color: #ff6600;
+        font-size: 16px;
+        top: 190px;
+    }
+    .oneF_content li span:nth-child(3) {
+        color: #666666;
+        top: 210px;
+    }
+    .oneF_content li span:nth-child(3):hover{
+        color: #f40;
+    }
+    .oneF_content li span:nth-child(4){
+        color: #ff6600;
+        bottom: 8px;
+    }
+    .oneF_content img:hover{
+        margin-left: -4px;
+        transition: all .4s;
+    }
+    /*2f*/
+    #twoF{
+        margin-bottom: 40px;
+    }
+    #twoF .title{
+        border-bottom:3px solid #fd81b3;
+    }
+    #twoF .title h2{
+        color: #fd81b3;
+    }
+    #twoF .twoF_content{
+        background-color: #e9e9e9;
+        height: 720px;
+    }
+    .twoF_content_l{
+        width: 210px;
+        height: 720px;
+        position: relative;
+        float:left;
+    }
+    /*轮播图*/
+    .twoF_content_l_banner{
+        position: relative;
+        height: 360px;
+        width: 210px;
+        overflow:hidden;
+        float:left;
+    }
+    .twoF_content_l_banner ul{
+        position: absolute;
+        height: 243px;
+     }
+     .twoF_content_l_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+     }
+    .twoF_content_l_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .twoF_content_l_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .twoF_content_l_banner p span.show{
+        background:#fff;
+    }
+
+    .twoF_content_l .hot_sort{
+        position:absolute;
+        background-color: #f7f7f7;
+        top: 360px;
+        height: 360px;
+        border: 1px solid #e9e9e9;
+    }
+    .twoF_content_l .hot_sort_title{
+        width: 208px;
+        height: 50px;
+        line-height: 50px;
+        color: #333333;
+        font-size: 16px;
+        text-align: center;
+    }
+    .twoF_content_l .hot_sort_good ul{
+        padding-left: 9px;
+    }
+    .twoF_content_l .hot_sort_good ul li{
+        float:none !important;
+        width: 190px;
+        height: 88px;
+        margin-bottom: 14px;
+        position: relative;
+    }
+    .hot_sort_good ul li .label1{
+        width: 190px;
+        height: 33px;
+        position: absolute;
+        background:url('../image/f_hot_bg.png') no-repeat;
+
+    }
+    .hot_sort_good ul li .label2{
+        padding-top: 20px;
+        overflow:hidden;
+    }
+    .hot_sort_good ul li .label2 p{
+        margin:0 3px 0 77px;
+        color:#666;
+        position:absolute;
+    }
+    .hot_sort_good ul li .label2 p:hover{
+        color:#f40;
+    }
+    .hot_sort_good ul li .label2 .price{
+        padding-left: 9px;
+        margin-right: 20px;
+        color:#ff6600;
+        display:inline-block;
+        margin-top: 30px;
+    }
+    .hot_sort_good ul li .label2 .price_{
+        text-decoration:line-through;
+        color:#999999;
+    }
+    .hot_sort_good ul li .label2 i{
+        display:block;
+        background: url(../image/tubiao.png) no-repeat -367px -55px;
+        width: 84px;
+        height: 15px;
+        margin-left: 77px;
+        margin-top: 5px;
+    }
+    .hot_sort_good ul li:nth-child(2) .label1{
+        background-position: 0px -33px;
+    }
+    .hot_sort_good ul li:nth-child(3) .label1{
+        background-position: 0px -66px;
+    }
+    /*2f 右边*/
+    .twoF_content_r ul{
+        position: relative;
+    }
+    .twoF_content_r ul li{
+        background:#fff;
+        width: 243px;
+        height: 238px;
+        padding: 10px 10px 0 10px;
+        margin: 1px 1px 0 0;
+    }
+    .twoF_content_r ul li img:hover{
+        margin-left: -10px;
+        transition:all .4s;
+    }
+    .twoF_content_r ul li:nth-child(7) img:hover{
+        margin-left: 0;  
+    }
+    .twoF_content_r ul li:nth-child(4){
+        width: 247px;
+    }
+    .twoF_content_r ul li:nth-child(11){
+        width: 247px;
+    }
+    .twoF_content_r ul li a span{
+        display:block;
+        height: 20px;
+        float:left;
+        width: 100%;
+    }
+    .twoF_content_r ul li a span:nth-child(2){
+        color: #ff6600;
+        font-size: 18px;
+        /*margin-bottom: 5px;*/
+        height: 24px;
+        
+    }
+    .twoF_content_r ul li a span:nth-child(3){
+        color:#666666;
+    }
+    .twoF_content_r ul li a span:nth-child(3):hover{
+        color:#f40;
+    }
+    .twoF_content_r ul li a span:nth-child(4){
+        color: #FF6600;
+    }
+    .twoF_content_r ul li:nth-child(7){
+        width: 490px;
+        height: 239px;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .twoF_content_r ul li:nth-child(7) img{
+        width: 490px;
+        height: 239px;    
+    }
+
+    .twoF_content_r ul .bottomli{
+        height: 240px;
+    }
+    /*2f轮播图*/
+    .twoF_content_r_banner{
+        position: relative;
+        width: 490px;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+    }
+    .twoF_content_r_banner ul{
+        position: absolute;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+     }
+     .twoF_content_r_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 0;
+     }
+    .twoF_content_r_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .twoF_content_r_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .twoF_content_r_banner p span.show{
+        background:#fff;
+    }
+    .twoF_content_b{
+        overflow:hidden;
+        margin-top: 10px;
+    }
+    .twoF_content_b li{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .twoF_content_b li:nth-child(4n){
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    /*3f*/
+    #threeF{
+        overflow:hidden;
+    }
+    #threeF .title{
+        border-bottom: 3px solid #72b7fc;
+    }
+    #threeF .title h2{
+        color: #72b7fc;
+    }
+    #threeF .twoF_content{
+        background:#e9e9e9;
+        overflow:hidden;
+    }
+    /*3f 轮播图*/
+    .threeF_content_l_banner{
+        position: relative;
+        height: 360px;
+        width: 210px;
+        overflow:hidden;
+        float:left;
+    }
+    .threeF_content_l_banner ul{
+        position: absolute;
+        height: 243px;
+     }
+     .threeF_content_l_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+     }
+    .threeF_content_l_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .threeF_content_l_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .threeF_content_l_banner p span.show{
+        background:#fff;
+    }
+    .threeF_content_r_banner{
+        position: relative;
+        width: 490px;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+    }
+    .threeF_content_r_banner ul{
+        position: absolute;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+     }
+     .threeF_content_r_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 0;
+     }
+    .threeF_content_r_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .threeF_content_r_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .threeF_content_r_banner p span.show{
+        background:#fff;
+    }
+    /*4f*/
+    #fourF{
+        margin-top: 40px;
+        overflow:hidden;
+    }
+    #fourF .title{
+        border-bottom: 3px solid #00cccc;
+    }
+    #fourF .title h2{
+        color: #00cccc;
+    }
+    #fourF .twoF_content{
+        background:#e9e9e9;
+        overflow:hidden;
+    }
+    /*4f 轮播图*/
+    .fourF_content_l_banner{
+        position: relative;
+        height: 360px;
+        width: 210px;
+        overflow:hidden;
+        float:left;
+    }
+    .fourF_content_l_banner ul{
+        position: absolute;
+        height: 243px;
+     }
+     .fourF_content_l_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+     }
+    .fourF_content_l_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .fourF_content_l_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .fourF_content_l_banner p span.show{
+        background:#fff;
+    }
+    .fourF_content_r_banner{
+        position: relative;
+        width: 490px;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+    }
+    .fourF_content_r_banner ul{
+        position: absolute;
+        height: 240px;
+        overflow:hidden;
+        float:left;
+     }
+     .fourF_content_r_banner ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 0;
+     }
+    .fourF_content_r_banner p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .fourF_content_r_banner p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .fourF_content_r_banner p span.show{
+        background:#fff;
+    }
+    /*5f*/
+     #fiveF{
+        margin-top: 40px;
+     }
+     #fiveF .title{
+        border-bottom: 3px solid #666666;
+     }
+     #fiveF .title h2{
+        color: #666666;
+     }
+     #fiveF .oneF_top{
+        padding-left: 6px;
+        overflow:hidden;
+     }
+     /*轮播图*/
+    .fiveF_banner_show{
+        position: relative;
+        height: 243px;
+        width: 710px;
+        overflow:hidden;
+        float:left;
+        margin-right: 6px;
+    }
+     .fiveF_banner_show ul{
+        position: absolute;
+        height: 243px;
+     }
+     .fiveF_banner_show ul li{
+        position:absolute;
+        top: 0;
+        left: 0;
+     }
+    .fiveF_banner_show p{
+        position: absolute;
+        bottom: 5px;
+    }
+    .fiveF_banner_show p span{
+        display:inline-block;
+        width: 40px;
+        height: 5px;
+        background:#666;
+        margin-right: 5px;
+    }
+    .fiveF_banner_show p span.show{
+        background:#90C221;
+    }
+    /*门店*/
+    .door_shop{
+        margin-bottom: 40px;
+    }
+    .door_shop .tab{
+        border-bottom: 3px solid #94c51b;
+        background-color: #e9e9e9;
+        overflow:hidden;
+    }
+    .door_shop .tab ul{
+        float:left;
+    }
+    .door_shop .tab ul li{
+        float:left;
+        width: 100px;
+        height: 27px;
+        color: #666666;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 27px;
+        background: #ffffff;
+        margin: 1px 0px 0px 1px;
+        text-align: center;
+    }
+    .door_shop .tab div{
+        float:left;
+        position: relative;
+        width: 685px;
+        background:#fff;
+        height: 26px;
+        margin-top: 1px;
+        border-right: 1px solid #e9e9e9;
+    }
+    .door_shop .tab div img{
+        float:right;
+        margin-right: 45px;
+    }
+    .door_shop .tab  .title_more{
+        position: absolute;
+        right: 0;
+        border: 0 !important;
+        padding-right: 15px;
+        margin-right: 0;
+        top: 7px;
+        color:#666666;
+    }
+    .door_shop .tab div i{
+        width: 13px;
+        height: 13px;
+        background: url(../image/tubiao.png) no-repeat 0px -727px;
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: 0px;
+    }
+    .door_shop .tit{
+        height: 60px;
+    }
+    .door_shop .tit li{
+        color: #666666;
+        line-height: 20px;
+        text-indent: 2em;
+        position: relative;
+        overflow:hidden;
+        padding: 15px;
+        border:1px solid #e9e9e9;
+        float:left;
+        width: 1190px;
+    }
+    .door_shop .tit li span{
+        width: 680px;
+        float:left;
+        display:block;
+    }
+    .door_shop .tit li div{
+        width: 295px;
+        height: 30px;
+        float:right;
+        position:absolute;
+        right: 0;
+        border-left: 1px solid #f1f1f1;
+    }
+    .door_shop .left{
+        width: 169px;
+        height: 273px;
+        float:left;
+    }
+    .door_shop .center{
+        width: 723px;
+        height: 272px;
+        float:left;
+
+    }
+    
+    .tit li{
+        display:none;
+    }
+    .door_shop .left div{
+        width: 169px;
+        background:#ccc;
+    }
+    .door_shop .left .left_t{
+        height: 135px;
+        background:url(../image/left_bg_all.png) no-repeat  0px -274px;
+    }
+    .door_shop .left .left_b{
+        height: 137px;
+        background:url(../image/left_bg_all.png) no-repeat  0px -136px;
+    }
+    .door_shop .center{
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .door_shop .center li{
+        display:none;
+        position: relative;
+    }
+    .door_shop .center div{
+        float:left;
+        display:none;
+    }
+    .door_shop .center li div:nth-child(1){
+        display:block;
+    }
+    .door_shop .center img{
+        width: 703px;
+        height: 251px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .door_shop .right{
+        width: 298px;
+        height: 272px;
+        float:left;
+        padding:25px 20px 0 20px;
+        color:#666666;
+        border: 1px solid #e0e0e0;
+        border-top:none;
+
+    }
+    .door_shop .right li{
+        display:none;
+    }
+    .door_shop .right .top{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 15px;
+    }
+    .door_shop .right p{
+        background:url(../image/serviceIcon.png) no-repeat -2px -229px;
+        padding-left: 30px;
+        line-height: 18px;  
+        margin-bottom: 5px;
+    }
+    .comment a{
+        color:#666;
+    }
+    .comment a:hover{
+        color:#f40;
+    }
+    .comment .left{
+        width: 210px;
+       border: 1px solid #ddd;
+        border-top: 3px solid #94c51b;  
+        float:left;
+        height: 234px;
+    }
+    .comment .left .tab{
+        display:flex;
+        background:#94c51b;
+        text-align: center;
+    }
+    .comment .left .tab span{
+        flex:1;
+        line-height: 28px;
+        font-size: 14px;
+        font-weight: bold;
+        color:#fff;
+
+    }
+    .comment .left .info{
+        height: 192px;
+        margin-top: 5px;
+        padding-right: 8px;
+
+    }
+    .comment .left .info ul:nth-child(2) {
+        display:none;
+    }
+    .comment .left .info li{
+        line-height: 20px;
+        padding-left: 20px;
+        background:url(../image/bg-home-02g.jpg) no-repeat 6px 4px;
+        /*text-overflow:ellipsis;*/
+        white-space:nowrap;
+        overflow:hidden;
+    }
+    .new_comment,.hot_comment,.lianxi{
+        border:1px solid #ddd;
+        border-top: 3px solid #94c51b;
+        width: 328px;
+        height: 234px;
+        float:left;
+        margin-left: 8px;
+    }
+    .comment .lianxi{
+        width: 300px;
+    }
+    .comment .lianxi p{
+        padding:8px 15px;
+        font-weight: bold;
+        color:#666;
+    }
+    .comment .bottom{
+        background:url(../image/gzbtg.jpg) no-repeat;
+        height: 100%;
+        display:flex;
+    }
+    .comment .bottom span{
+        flex:1;
+    }
+    /*底部*/
+    #main_bottom{
+        overflow:hidden;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 6px inset;
+        padding-top: 10px;
+        clear: both;
+        font-family: 宋体;
+        background: rgb(240, 240, 240);
+    }
+    .main_bottom {
+        text-align: center;
+    }
+    .main_bottom img{
+        display:inline-block;
+    }
+    .main_bottom .FTA-02{
+        overflow:hidden;
+        display:inline-block;
+        padding-top: 20px;
+        border-top: 1px solid #fff;
+    }
+    .main_bottom .FTA-02 ul{
+        float:left;
+        width: 150px;
+        height: 86px;
+
+    }
+    .main_bottom .FTA-02 h4{
+        font-size: 14px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color:#666;
+    }
+    .main_bottom .FTA-02 li{
+        line-height: 160%;
+    }
+    .main_bottom .FTA-02 a{
+        color:#999;
+    }
+    .main_bottom .FTA-02 a:hover{
+        color:#f40;
+    }
+    #footer{
+        margin-top: 15px;
+        height: 190px !important;
+    }
+    #footer_info{
+        border-top: 1px solid #fff;
+        padding-top: 20px !important;
+    }
+    /*左侧菜单*/
+    .pf_left{
+        width: 40px;
+        background:pink;
+        position:fixed;
+        top: 20%;
+        left: 50%;
+        margin-left: -640px;
+        display:none;
+    }
+    .pf_left a{
+        width: 40px;
+        height: 40px;
+        background: url(../image/tubiao.png) no-repeat;
+        display: block;
+    }
+    .pf_left .pf_left_1{
+        background-position: -70px -414px;
+        
+    }
+    .pf_left .pf_left_1:hover{
+        background-position:-30px -414px;
+    }
+    .pf_left .pf_left_2{
+        background-position: -70px -454px;
+    }
+    .pf_left .pf_left_2:hover{
+        background-position: -30px -454px;
+    }
+    .pf_left .pf_left_3{
+        background-position: -70px -494px;
+    }
+    .pf_left .pf_left_3:hover{
+        background-position: -30px -494px;
+    }
+    .pf_left .pf_left_4{
+        background-position: -70px -534px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .pf_left .pf_left_4:hover{
+        background-position: -30px -534px;
+    }
+    

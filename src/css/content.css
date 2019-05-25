@@ -12,3 +12,7 @@ input{outline: none;}
 .fl{
 	float: left;
 }
+img{
+    font-size: 0;
+    display:block;
+}
