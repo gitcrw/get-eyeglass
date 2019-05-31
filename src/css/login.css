@@ -1,230 +1,273 @@
+#login_main {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
 
-		#login_main{
-			width: 1000px;
-			margin: 0 auto;
-			position: relative;
-		}
-		#login_main_info img{
-			display: block;
-		}
-		#login_login{
-			width: 340px;
-			height: 360px;
-			border-radius: 3px;
-			background: rgba(255,255,255,0.9);
-			position: absolute;
-			top: 0;
-			right: 2px;
-			margin-top: 60px;
-		}
-		#login_login .l_title{
-			width: 100%;
-		    height: 24px;
-		    padding: 18px 0 18px 0;
-		    font-size: 20px;
-		    color: #666;
-		    font-family: 微软雅黑;
-		}
-		#login_login .l_title .active{
-			color: #89b929;
-		}
-		#login_login .l_title span:hover{
-			cursor: pointer;
-		}
-		#login_login .l_title span:nth-child(1){
-			margin-left: 50px;
-			margin-right: 80px;
-		}
+#login_main_info img {
+	display: block;
+}
 
+#login_login {
+	width: 340px;
+	height: 360px;
+	border-radius: 3px;
+	background: rgba(255, 255, 255, 0.9);
+	position: absolute;
+	top: 0;
+	right: 2px;
+	margin-top: 60px;
+}
 
-		#login_login .l_content_r{
-			width: 280px;
-			margin: 30px auto 0;
-		}
-		#login_login .l_content_r .username,#login_login .l_content_r .password{
-			position: relative;
-			margin: 10px 0 5px;
-		}
-		#login_login .l_content_r .username i{
-			position: absolute;
-			display: block;
-			width: 40px;
-    		height: 36px;
-    		/*top: 0;
+#login_login .l_title {
+	width: 100%;
+	height: 24px;
+	padding: 18px 0 18px 0;
+	font-size: 20px;
+	color: #666;
+	font-family: 微软雅黑;
+}
+
+#login_login .l_title .active {
+	color: #89b929;
+}
+
+#login_login .l_title span:hover {
+	cursor: pointer;
+}
+
+#login_login .l_title span:nth-child(1) {
+	margin-left: 50px;
+	margin-right: 80px;
+}
+
+#login_login .l_content_r {
+	width: 280px;
+	margin: 30px auto 0;
+}
+
+#login_login .l_content_r .username,
+#login_login .l_content_r .password {
+	position: relative;
+	margin: 10px 0 5px;
+}
+
+#login_login .l_content_r .username i {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 36px;
+	/*top: 0;
     		left: 0;*/
-    		background: url(../image/allbgs.png) no-repeat -62px 4px;
-		}
-		#login_login .l_content_r .password i{
-			position: absolute;
-			display: block;
-			width: 40px;
-    		height: 36px;
-    		background: url(../image/allbgs.png) no-repeat -62px -31px;
-		}
-		#login_login .l_content_r .username span,.l_content_r .password span{
-			position: absolute;
-			top:8px;
-			left: 35px;
-			font-size: 16px;
-			color: #b7b5b5;
-		}
-		#login_login .l_content_r input{
-			width: 280px;
-			height: 38px;
-			padding-left: 45px;
-			box-sizing: border-box;
-		}
-		.remeber{
-			position: relative;
-		}
-		.remeber span{
-			vertical-align: middle;
-    		background-color: #fff;
-    		margin-right: 5px;
-		}
-		.remeber a{
-			position: absolute;
-			right: 0;
-			color: #FF6347;
-		}
-		.remeber .select{
-			background-position:-13px -432px !important;
-		}
-		#remeberuser,#remeberauto{
-			vertical-align: middle;
-		    margin-right: 2px;
-		    width: 12px;
-		    height: 12px;
-		    display: inline-block;
-		    background: url(../image/allbgs.png) no-repeat; 
-		    background-position:  0 -432px;
-		}
-		#l_info{
-			position: absolute;
-			margin-top: 2px;
-			color: #f40;
-		}
-		#loginbtn{
-			border: none;
-			background: #f60;
-			cursor: pointer;
-			margin-top: 20px;
-			font-size: 15px;
-			border-radius: 3px;
-			color: #fff;
-			letter-spacing: 34px;
-		}
-		#login_login .l_qt{
-			background: #ebebf1;
-			width: 100%;
-			height: 60px;
-			position: absolute;
-			bottom: 0;
-			padding: 15px  20px 0 20px;
-			box-sizing: border-box;
-			border-radius: 0 0 3px 3px;
-		}
-		#login_login .l_qt>a{
-			margin-right: 8px;
-			display: block;
-			height: 32px;
-			width: 32px;
-			float: left;
-			background: #ebebf1 url(../image/allbgs.png) no-repeat;
-		}
-		#login_login .l_qt a:hover{
-			opacity: 0.5;
-			cursor: pointer;
-		}
-		#login_login .l_qt .weixin{
-			background-position: -120px -74px;
-		}
-		#login_login .l_qt .qq{
-			background-position: 0 -74px;
-		}
-		#login_login .l_qt .sina{
-			background-position: -40px -74px;
-		}
-		#login_login .l_qt .zhifubao{
-			background-position: -80px -74px;
-		}
-		#login_login .l_qt .toRegister{
-			float: left;
-			margin-top: 5px;
-			margin-left: 60px;
-		}
-		#login_login .l_qt .toRegister a{
-			color: #FF6347;
-			font-size: 14px;
-			position: relative;
-		}
-		#login_login .l_qt .toRegister i{
-			width: 16px;
-			height: 16px;
-			display: inline-block;
-			background: url(../image/tubiao.png) no-repeat -412px -940px;
-			margin-left: 4px;
-			position: absolute;
-			top: 2px;
-		}
-		.l_content_l{
-			overflow: hidden;
-		}
-		.twocode{
-			width: 142px;
-			/*margin:50px 0 0 30px;*/
-			margin: 40px auto 0;
-			/*float: left;*/
-		}
-		.twocode img{
-			display: inline-block !important;
-			cursor: pointer;
-		}
-		.codetext{
-			width: 148px;
-			margin-top: 18px;
-			/*vertical-align: middle;*/
-			line-height: 20px;
-			position: relative;
-		}
-		.codetext i{
-			position:absolute;
-			display:inline-block;
-		    width: 40px;
-		    height: 40px;
-		    left: -4px;
-			top: 0;
-		    background: url(../image/allbgs.png) no-repeat -118px -15px;
-		}
-		.codetext span{
-			color: #999999;
-			margin-left: 46px;
-		}
-		.codetext a{
-			color:#f40;
-		}
-		.codetext a:hover{
-			color: #8784fb;;
-		}
-		.saoapp{
-			position: relative;
-			/*width: 150px;*/
-			/*height: 203px;*/
-			float: right;
-			text-align: right;
-			margin-top:50px; 
-			display: none;
-			/*overflow: hidden;*/
-		}
-		.saoapp img{
-			/*display: inline-block !important;*/
-		}
-		.saoapp #down_app,#down_app_h{
-			position: absolute;
-			top: 153px;
-			left: 0;
-			cursor: pointer;
-		}
-		.saoapp #down_app_h{
-			display: none;
-		}
+	background: url(../image/allbgs.png) no-repeat -62px 4px;
+}
+
+#login_login .l_content_r .password i {
+	position: absolute;
+	display: block;
+	width: 40px;
+	height: 36px;
+	background: url(../image/allbgs.png) no-repeat -62px -31px;
+}
+
+#login_login .l_content_r .username span,
+.l_content_r .password span {
+	position: absolute;
+	top: 8px;
+	left: 35px;
+	font-size: 16px;
+	color: #b7b5b5;
+}
+
+#login_login .l_content_r input {
+	width: 280px;
+	height: 38px;
+	padding-left: 45px;
+	box-sizing: border-box;
+}
+
+.remeber {
+	position: relative;
+}
+
+.remeber span {
+	vertical-align: middle;
+	background-color: #fff;
+	margin-right: 5px;
+}
+
+.remeber a {
+	position: absolute;
+	right: 0;
+	color: #FF6347;
+}
+
+.remeber .select {
+	background-position: -13px -432px !important;
+}
+
+#remeberuser,
+#remeberauto {
+	vertical-align: middle;
+	margin-right: 2px;
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	background: url(../image/allbgs.png) no-repeat;
+	background-position: 0 -432px;
+}
+
+#l_info {
+	position: absolute;
+	margin-top: 2px;
+	color: #f40;
+}
+
+#loginbtn {
+	border: none;
+	background: #f60;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: 15px;
+	border-radius: 3px;
+	color: #fff;
+	letter-spacing: 34px;
+}
+
+#login_login .l_qt {
+	background: #ebebf1;
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	bottom: 0;
+	padding: 15px 20px 0 20px;
+	box-sizing: border-box;
+	border-radius: 0 0 3px 3px;
+}
+
+#login_login .l_qt>a {
+	margin-right: 8px;
+	display: block;
+	height: 32px;
+	width: 32px;
+	float: left;
+	background: #ebebf1 url(../image/allbgs.png) no-repeat;
+}
+
+#login_login .l_qt a:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+#login_login .l_qt .weixin {
+	background-position: -120px -74px;
+}
+
+#login_login .l_qt .qq {
+	background-position: 0 -74px;
+}
+
+#login_login .l_qt .sina {
+	background-position: -40px -74px;
+}
+
+#login_login .l_qt .zhifubao {
+	background-position: -80px -74px;
+}
+
+#login_login .l_qt .toRegister {
+	float: left;
+	margin-top: 5px;
+	margin-left: 60px;
+}
+
+#login_login .l_qt .toRegister a {
+	color: #FF6347;
+	font-size: 14px;
+	position: relative;
+}
+
+#login_login .l_qt .toRegister i {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../image/tubiao.png) no-repeat -412px -940px;
+	margin-left: 4px;
+	position: absolute;
+	top: 2px;
+}
+
+.l_content_l {
+	overflow: hidden;
+}
+
+.twocode {
+	width: 142px;
+	/*margin:50px 0 0 30px;*/
+	margin: 40px auto 0;
+	/*float: left;*/
+}
+
+.twocode img {
+	display: inline-block !important;
+	cursor: pointer;
+}
+
+.codetext {
+	width: 148px;
+	margin-top: 18px;
+	/*vertical-align: middle;*/
+	line-height: 20px;
+	position: relative;
+}
+
+.codetext i {
+	position: absolute;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	left: -4px;
+	top: 0;
+	background: url(../image/allbgs.png) no-repeat -118px -15px;
+}
+
+.codetext span {
+	color: #999999;
+	margin-left: 46px;
+}
+
+.codetext a {
+	color: #f40;
+}
+
+.codetext a:hover {
+	color: #8784fb;
+	;
+}
+
+.saoapp {
+	position: relative;
+	/*width: 150px;*/
+	/*height: 203px;*/
+	float: right;
+	text-align: right;
+	margin-top: 50px;
+	display: none;
+	/*overflow: hidden;*/
+}
+
+.saoapp img {
+	/*display: inline-block !important;*/
+}
+
+.saoapp #down_app,
+#down_app_h {
+	position: absolute;
+	top: 153px;
+	left: 0;
+	cursor: pointer;
+}
+
+.saoapp #down_app_h {
+	display: none;
+}

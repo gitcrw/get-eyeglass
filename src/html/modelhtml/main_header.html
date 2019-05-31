@@ -1,149 +1,964 @@
 ﻿<style type="text/css">
-    
-    .main_header{
-        height: 100px;
-        padding-top: 20px;
-        position: relative;
-        overflow: hidden;
-    }
-    .top_img{
-        font-size: 0;
-        display:block;
-        border:0;
-        position: relative;
-    }
-    .main_header .haitao{
-        position:absolute;
-        top: 20px;
-        left: 464px;
-    }
-    .main_header .haitao a{
-        width: 76px;
-        height: 76px;
-        /*display: block;*/
-        position:absolute;
-    }
-    #main_search{
-        position:absolute;
-        right: 0;
-        width: 330px;
-        height: 68px;
-        top: 31px;
-        color:#999999;
-    }
-    .main_search{
-        border: 2px solid #90C221;
-    }
-    .main_search i{
-        display:block;
-        background:url(../image/tubiao.png) no-repeat 5px -350px;
-        width: 30px;
-        height: 26px;
-        position: absolute;
-        top: 4px;
-        left: 2px;
-    }
-    #search_info{
-        width: 248px;
-        height: 30px;
-        background-color: #fff;
-        color: #a0a0a0;
-        width: 215px;
-        height: 30px;
-        line-height: 30px;
-        border:0;
-        padding-left: 33px;
-    }
-    #search_btn{
-        width: 78px;
-        height: 34px;
-        background:#90c31f;
-        border:0;
-        color:#fff;
-        position:absolute;
-        right: 0;
-        top: 0;
-        cursor: pointer;
-        font-weight: 600;
-    }
-    .hot_search{
-        height: 25px;
-        line-height: 25px;
-    }
-    .hot_search a{
-        margin-left: 5px;
-        color:#999999;
-    }
-    .hot_search a:hover{
-        color:#f40;
-    }
-    #hearder_menu{
-        height: 35px;
-        line-height: 35px;
-        background-color: #90c31f;
-        color:#fff;
-        font-size: 14px;
-    }
-    #hearder_menu .all_goods{
-        background:#6d9d03;
-        width: 210px;
-        padding-left: 50px;
-        position: relative;
-        float: left;
-    }
-    .all_goods i{
-        display:block;
-        background: url(../image/tubiao.png) no-repeat;
-        width: 14px;
-        height: 12px;
-        background-position: 0 -124px;
-        position: absolute;
-        top: 12px;
-        left: 147px;
-    }
-    #hearder_menu ul li{
-        float:left;
-        font-weight: bold;
-    }
-    #hearder_menu ul li a{
-        color: #fff;
-        padding:0 35px;
-        display:block;
-    }
-    #hearder_menu ul li a:hover{
-        background:#77b001;
-    }
-    
+	.main_header {
+		height: 100px;
+		padding-top: 20px;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#header_img {
+		height: 95px;
+		width: 1190px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	
+	.list_item_info6 {
+		position: absolute;
+		top: 0 !important;
+	}
+	
+	.list_item_info6 img {
+		display: inline-block;
+	}
+	
+	.top_img {
+		font-size: 0;
+		display: block;
+		border: 0;
+	}
+	
+	.main_header .haitao {
+		position: absolute;
+		top: 20px;
+		left: 464px;
+	}
+	
+	.main_header .haitao a {
+		width: 76px;
+		height: 76px;
+		/*display: block;*/
+		position: absolute;
+	}
+	
+	#main_search {
+		position: absolute;
+		right: 0;
+		width: 330px;
+		height: 68px;
+		top: 31px;
+		color: #999999;
+	}
+	
+	.main_search {
+		border: 2px solid #90C221;
+	}
+	
+	.main_search i {
+		display: block;
+		background: url(../image/tubiao.png) no-repeat 5px -350px;
+		width: 30px;
+		height: 26px;
+		position: absolute;
+		top: 4px;
+		left: 2px;
+	}
+	
+	#search_info {
+		width: 248px;
+		height: 30px;
+		background-color: #fff;
+		color: #a0a0a0;
+		width: 215px;
+		height: 30px;
+		line-height: 30px;
+		border: 0;
+		padding-left: 33px;
+	}
+	
+	#search_btn {
+		width: 78px;
+		height: 34px;
+		background: #90c31f;
+		border: 0;
+		color: #fff;
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+		font-weight: 600;
+	}
+	
+	.hot_search {
+		height: 25px;
+		line-height: 25px;
+	}
+	
+	.hot_search a {
+		margin-left: 5px;
+		color: #999999;
+	}
+	
+	.hot_search a:hover {
+		color: #f40;
+	}
+	
+	#hearder_menu {
+		height: 35px;
+		line-height: 35px;
+		background-color: #90c31f;
+		color: #fff;
+		font-size: 14px;
+	}
+	
+	#hearder_menu .all_goods {
+		background: #6d9d03;
+		width: 210px;
+		padding-left: 50px;
+		position: relative;
+		float: left;
+	}
+	
+	.all_goods i {
+		display: block;
+		background: url(../image/tubiao.png) no-repeat;
+		width: 14px;
+		height: 12px;
+		background-position: 0 -124px;
+		position: absolute;
+		top: 12px;
+		left: 147px;
+	}
+	
+	.all_goods_ul {
+		z-index: 100;
+	}
+	
+	#hearder_menu ul li {
+		float: left;
+		font-weight: bold;
+	}
+	
+	#hearder_menu ul li a {
+		color: #fff;
+		padding: 0 35px;
+		display: block;
+	}
+	
+	#hearder_menu ul li a:hover {
+		background: #77b001;
+	}
+	
+	.all_goods_ul {
+		display: none;
+		width: 210px;
+		height: 320px;
+		background: #fff;
+		position: absolute;
+		left: 50%;
+		margin-left: -595px;
+	}
+	
+	.all_goods_ul li {
+		height: 46px;
+		line-height: 46px;
+		border: 1px solid transparent;
+		position: relative;
+		width: 210px;
+	}
+	
+	.all_goods_ul>li>i {
+		float: left;
+		width: 30px;
+		height: 30px;
+		overflow: hidden;
+		margin: 9px 5px 0px 27px;
+		background: url(../image/tubiao.png) no-repeat 0px -414px;
+		;
+	}
+	
+	.all_goods_ul .list_item_i2 {
+		background-position: 0px -453px;
+	}
+	
+	.all_goods_ul .list_item_i3 {
+		background-position: 0px -494px;
+	}
+	
+	.all_goods_ul .list_item_i4 {
+		background-position: 0px -531px;
+	}
+	
+	.all_goods_ul .list_item_i5 {
+		background-position: 0px -570px;
+	}
+	
+	.all_goods_ul .list_item_i6 {
+		background-position: 0px -607px;
+	}
+	
+	.all_goods_ul .list_item_i7 {
+		background-position: 0px -644px;
+	}
+	
+	.all_goods_ul li h3 {
+		width: 105px;
+		height: 45px;
+		float: left;
+	}
+	
+	.all_goods_ul li a {
+		color: #666666;
+		font-size: 12px;
+		font-weight: 500;
+	}
+	
+	.all_goods_ul li>span {
+		display: block;
+		background: url(../image/tubiao.png) no-repeat 0px -681px;
+		width: 6px;
+		height: 35px;
+		float: left;
+		margin-top: 3px;
+	}
+	
+	.all_goods_ul li h4 {
+		width: 50px;
+		height: 44px;
+		position: absolute;
+		right: -5px;
+		top: 0px;
+		display: none;
+		background: #fff;
+		z-index: 100;
+	}
+	
+	.all_goods_ul li p {
+		border-bottom: 1px dotted #cbcbcb;
+		width: 190px;
+		margin-left: 10px;
+		float: left;
+		/*position:absolute;
+        top: 46px;*/
+	}
+	
+	.all_goods_ul li>div {
+		width: 760px;
+		height: 320px;
+		background: #fff;
+		position: absolute;
+		left: 208px;
+		top: -1px;
+		display: none;
+		z-index: 2;
+	}
+	
+	.all_goods_ul li:hover p {
+		display: none;
+	}
+	
+	.all_goods_ul li:hover {
+		border: 1px solid #94c51b;
+		width: 210px;
+	}
+	
+	.all_goods_ul li:hover h4 {
+		display: block;
+	}
+	
+	.all_goods_ul li:hover>div {
+		display: block;
+		border: 1px solid #94c51b;
+	}
+	
+	.all_goods_ul li:nth-child(2):hover div {
+		top: -47px;
+	}
+	
+	.all_goods_ul li:nth-child(3):hover div {
+		top: -93px;
+	}
+	
+	.all_goods_ul li:nth-child(4):hover div {
+		top: -139px;
+	}
+	
+	.all_goods_ul li:nth-child(5):hover div {
+		top: -185px;
+	}
+	
+	.all_goods_ul li:nth-child(6):hover div {
+		top: -231px;
+	}
+	
+	.all_goods_ul li:nth-child(7) {
+		height: 44px;
+	}
+	
+	.all_goods_ul li:nth-child(7):hover h4 {
+		height: 42px;
+	}
+	
+	.all_goods_ul li:nth-child(7):hover div {
+		top: -277px;
+	}
+	
+	.all_goods_ul li>div>div a {
+		border-left: 1px solid #ccc;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.all_goods_ul li>div>div a:hover {
+		color: #f40;
+	}
+	
+	.list_item_d1 {
+		position: relative;
+	}
+	
+	.list_item_d1>div {
+		width: 507px;
+		height: 30px;
+		float: left;
+		line-height: 25px;
+		margin-top: 18px;
+	}
+	
+	.list_item_d1 .list_item_info1 {
+		height: 50px;
+	}
+	
+	.list_item_d1 .list_item_info6 {
+		position: absolute;
+		top: 0;
+		right: -270px;
+		height: 285px;
+		padding-left: 15px;
+		border-left: 1px solid #ccc;
+	}
+	
+	.list_item_d1 .list_item_info6 img:nth-child(1) {
+		margin-bottom: 10px;
+	}
+	
+	.list_item_d1>div>span {
+		display: inline-block;
+		height: 50px;
+		float: left;
+		width: 90px;
+		padding-right: 15px;
+		text-align: right;
+		color: #666666;
+		font-weight: bold;
+	}
+	
+	.list_item_d1>div>i {
+		display: block;
+		border-bottom: 1px dotted #666;
+		background: none;
+		margin-left: 90px;
+		margin-top: 5px;
+	}
+	
+	#right_menu ul li:nth-child(4) {
+		position: relative;
+	}
+	
+	#right_menu ul li #car_num {
+		position: absolute;
+		display: block;
+		min-width: 17px;
+		height: 17px;
+		right: 5px;
+		top: 5px;
+		text-align: center;
+		line-height: 17px;
+		color: #fff;
+		background-color: #ff6600;
+		border-radius: 7px;
+		font-style: normal;
+	}
 </style>
 <div id="main_header">
-    <div class="content" style="height:95px;"><img src="../image/main_top.jpg" class="top_img"/></div>
-    <div class="main_header content">
-        <h1><img src="../image/logo.jpg" /></h1>
-        <div class="haitao"><a href=""></a><img src="../image/haitao.jpg" alt="" /></div>
-        <div id="main_search">
-            <div class="main_search">
-                <i></i>
-                <input type="text" placeholder="库博硅水凝胶日抛" id="search_info" />
-                <input type="button" value="搜索" id="search_btn" />
-            </div>
-            <div class="hot_search">
-                <span>热门搜索：</span>
-                <a href="http://www.kede.com/seed.html" target="_self">实瞳</a><a href="http://www.kede.com/interojoa.html" target="_self">茵洛</a><a href="http://www.kede.com/weicon.html" target="_self">卫康</a><a href="http://www.kede.com/hydron.html" target="_self">海昌</a><a href="http://www.kede.com/GIVRE.html" target="_self">绮芙莉</a>
-            </div>
-        </div>
-        
-    </div>
-    <div id="hearder_menu">
-        <div class="content">
-             <div class="all_goods">
-                <span>全部商品分类</span>
-                <i></i>
-             </div>
-             <ul>
-                 <li class="item"><a href="/">首页</a></li><li class="item"><a href="/hwg0012017">海淘隐形</a></li><li class="item"><a href="/meitong">彩  瞳</a></li><li class="item"><a href="/yinxing">隐形眼镜</a></li><li class="item"><a href="/huliye">护理用品</a></li><li class="item"><a href="/frame">框架眼镜</a></li><li class="item"><a href="/mei">美妆个护</a></li><li class="item"><a href="/jifen">积分商城</a></li>
-             </ul>
-         </div>  
-    </div>
-    
-    
+	<div style="height:95px;" id="header_img"><img src="../image/main_top.jpg" class="top_img" /></div>
+	<div class="main_header content">
+		<h1><img src="../image/logo.jpg" /></h1>
+		<div class="haitao">
+			<a href=""></a><img src="../image/haitao.jpg" alt="" /></div>
+		<div id="main_search">
+			<div class="main_search">
+				<i></i>
+				<input type="text" placeholder="库博硅水凝胶日抛" id="search_info" />
+				<input type="button" value="搜索" id="search_btn" />
+			</div>
+			<div class="hot_search">
+				<span>热门搜索：</span>
+				<a href="http://www.kede.com/seed.html" target="_self">实瞳</a>
+				<a href="http://www.kede.com/interojoa.html" target="_self">茵洛</a>
+				<a href="http://www.kede.com/weicon.html" target="_self">卫康</a>
+				<a href="http://www.kede.com/hydron.html" target="_self">海昌</a>
+				<a href="http://www.kede.com/GIVRE.html" target="_self">绮芙莉</a>
+			</div>
+		</div>
+
+	</div>
+	<div id="hearder_menu">
+		<div class="content">
+			<div class="all_goods">
+				<span>全部商品分类</span>
+				<i></i>
+			</div>
+			<ul>
+				<li class="item">
+					<a href="/">首页</a>
+				</li>
+				<li class="item">
+					<a href="/hwg0012017">海淘隐形</a>
+				</li>
+				<li class="item">
+					<a href="/meitong">彩 瞳</a>
+				</li>
+				<li class="item">
+					<a href="/yinxing">隐形眼镜</a>
+				</li>
+				<li class="item">
+					<a href="/huliye">护理用品</a>
+				</li>
+				<li class="item">
+					<a href="/frame">框架眼镜</a>
+				</li>
+				<li class="item">
+					<a href="/mei">美妆个护</a>
+				</li>
+				<li class="item">
+					<a href="/jifen">积分商城</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<ul class="all_goods_ul">
+		<li>
+			<i class="list_item_i1"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i2"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i3"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i4"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i5"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i6"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<p></p>
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+		<li>
+			<i class="list_item_i7"></i>
+			<h3><a href="">透明隐形眼镜</a></h3>
+			<span></span>
+			<h4></h4>
+			<!--<p></p>-->
+			<div class="list_item_d1">
+				<div class="list_item_info1">
+					<span>品牌 ></span>
+					<a href="" style="color:#f40;">博士伦</a>
+					<a href="">强生</a>
+					<a href="">视康爱尔康</a>
+					<a href="" style="color:#f40;">库博</a>
+					<a href="">海昌</a>
+					<a href="">卫康</a>
+					<a href="">美若康</a>
+					<a href="" style="color:#f40;">Miru米如</a>
+					<a href="">依视明</a>
+					<a href="">奥克拉</a>
+					<a href="">实瞳</a>
+					<a href="">科莱博</a>
+					<a href="">蔡司</a>
+					<a href="">茵洛</a>
+					<a href="">菲士康</a>
+					<a href="">更多品牌>></a>
+					<i></i>
+				</div>
+				<div class="list_item_info2">
+					<span>周期 ></span>
+					<a href="" style="color:#f40;">日抛</a>
+					<a href="">双周抛</a>
+					<a href="">月抛</a>
+					<a href="">季抛</a>
+					<a href="" style="color:#f40;">半年抛</a>
+					<a href="">年抛</a>
+					<i></i>
+				</div>
+				<div class="list_item_info3">
+					<span>含水量 ></span>
+					<a href="" style="color:#f40;">43-69%</a>
+					<a href="">38-42%</a>
+					<a href="">≤37%</a>
+					<i></i>
+				</div>
+				<div class="list_item_info4">
+					<span>定制 ></span>
+					<a href="" style="color:#f40;">高度近视</a>
+					<a href="">近视散光</a>
+					<a href="">远视散光</a>
+					<i></i>
+				</div>
+				<div class="list_item_info5">
+					<span>热门 ></span>
+					<a href="" style="color:#f40;">硅水凝胶(超长戴)</a>
+					<a href="">防紫外线(抗UV)</a>
+					<a href="">防眼干/眼红</a>
+					<i></i>
+				</div>
+				<div class="list_item_info6">
+					<img src="../image/bp_a1.jpg" alt="" /> <br />
+					<img src="../image/bp_a2.jpg" alt="" />
+				</div>
+			</div>
+		</li>
+	</ul>
+
 </div>
+<!-- 右侧固定菜单 -->
+<div id="right_menu">
+	<ul>
+		<li>
+			<a href=""></a>
+			<div></div>
+		</li>
+		<li>
+			<a href=""></a>
+		</li>
+		<li>
+			<a href=""></a>
+			<div></div>
+		</li>
+		<li>
+			<a href="car.html" target="_blank"></a><i id="car_num">0</i></li>
+	</ul>
+</div>
+<script type="text/javascript">
+	(function() {
+		var all_goods = document.getElementsByClassName('all_goods')[0];
+		var all_goods_ul = document.getElementsByClassName('all_goods_ul')[0];
+		all_goods.onmouseover = function() {
+			all_goods_ul.style.display = 'block';
+		}
+		all_goods.onmouseleave = function() {
+			all_goods_ul.style.display = 'none';
+		}
+		all_goods_ul.onmouseover = function() {
+			this.style.display = 'block';
+		}
+		all_goods_ul.onmouseleave = function() {
+			this.style.display = 'none';
+		}
+
+		function refresh() {
+			if(getCookie('login')) {
+				$.ajax({
+					type: 'post',
+					url: '../api/addcar.php',
+					data: {
+						userphone: getCookie('login'),
+						gid: '',
+						num: ''
+					},
+					success: function(str) {
+						if(str == '') {
+							// $('#car_num').html(0);
+						} else {
+							$('#car_num').html(str);
+						}
+
+					}
+				})
+			}
+		}
+		//定时刷新购物车
+		refresh();
+		var car_timer = setInterval(refresh, 5000);
+
+		function getCookie(key) {
+			var str = document.cookie;
+			var arr = str.split('; ');
+			for(var i of arr) {
+				var arr2 = i.split('=');
+				if(key == arr2[0]) {
+					return arr2[1];
+				}
+			}
+		}
+	})()
+</script>

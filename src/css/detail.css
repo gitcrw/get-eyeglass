@@ -1,0 +1,318 @@
+/* 
+* @Author: Marte
+* @Date:   2019-05-27 16:55:08
+* @Last Modified by:   Marte
+* @Last Modified time: 2019-05-28 20:32:43
+*/
+
+#header_img {
+	display: none;
+}
+.main_header{
+	width: 1190px;
+	/*margin: 0 auto;*/
+	/*position: relative;
+	left: -330px;*/
+}
+#fdj {
+	overflow: hidden;
+}
+
+#fdj img {
+	display: block;
+	position: relative;
+}
+
+#pic {
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+}
+
+#pic img {
+	width: 400px;
+	height: 400px;
+}
+
+#pic #box {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+	opacity: .5;
+	display: none;
+	cursor: move;
+}
+
+#bigPic {
+	display: none;
+	float: left;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: -190px;
+	border: 1px solid #ccc;
+	z-index: 100;
+}
+
+#bigPic img {
+	width: 1200px;
+	position: absolute;
+}
+
+.picul {
+	margin-top: 20px;
+}
+
+.picul {
+	margin-top: 20px;
+}
+
+.picul img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	float: left;
+	margin: 0 2px;
+	border: 1px solid #ccc;
+	width: 66px;
+	height: 66px;
+	padding: 1px;
+}
+
+.picul img.active {
+	border: 2px solid #93c525;
+	padding: 0;
+}
+
+#good_content {
+	margin-top: 55px;
+}
+
+.good_left {
+	/*overflow:hidden;*/
+	float: left;
+}
+
+.good_right {
+	float: left;
+	margin-left: 50px;
+	color: #666666;
+}
+
+.good_right .details_top_name {
+	border-bottom: 1px dotted #ccc;
+	padding-bottom: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.details_info {
+	padding-bottom: 15px;
+	border-bottom: 1px dotted #ccc;
+}
+
+.detail_info_price {
+	height: 28px;
+	line-height: 28px;
+	margin-top: 5px;
+}
+
+.detail_info_price .now_price {
+	color: #FF6600;
+	font-size: 20px;
+	margin-right: 40px;
+	position: relative;
+	top: 2px;
+}
+
+.detail_info_price span:nth-child(1) {
+	padding: 0 5px;
+}
+
+.detail_info_price .prev_price {
+	margin-right: 40px;
+	position: relative;
+	top: 2px;
+}
+
+.detail_info_price .js_price {
+	margin-left: 15px;
+	position: relative;
+	top: 2px;
+}
+
+.jks {
+	margin-left: 8px;
+	margin-top: 15px;
+}
+
+.jks .jks_who {
+	margin-left: 5px;
+	color: #333;
+}
+
+.fhd {
+	margin-left: 8px;
+	margin-top: 5px;
+}
+
+.fhd .fhd_where {
+	margin-left: 5px;
+	color: #333;
+}
+
+.goods_id {
+	margin-top: 15px;
+	margin-left: 5px;
+}
+
+.goods_id #goods_id {
+	margin-left: 10px;
+	color: #333;
+	position: relative;
+	top: 1px;
+}
+
+.select_color {
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.select_color span {
+	float: left;
+}
+
+.select_color ul {
+	float: left;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.select_color ul li {
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+
+.select_color ul i {
+	display: block;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	background: url(../image/tubiao.png) no-repeat;
+	background-position: -30px -577px;
+}
+
+.select_color img {
+	width: 70px;
+	height: 70px;
+	float: left;
+	border: 1px solid #ccc;
+	margin-right: 10px;
+}
+
+.select_color ul li div {
+	width: 70px;
+	height: 70px;
+	background: #000;
+	opacity: .5;
+	position: relative;
+	bottom: -70px;
+	transition: all .4s;
+}
+
+.select_color ul li:hover div {
+	bottom: 0;
+}
+
+.select_num span:nth-child(1) {
+	float: left;
+	margin-right: 15px;
+}
+
+.select_num {
+	overflow: hidden;
+}
+
+.select_num div {
+	float: left;
+	width: 20px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #eeeeee;
+	margin-top: 0px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	padding-left: 1px;
+}
+
+.select_num input {
+	width: 30px;
+	height: 22px;
+	background-color: #fff;
+	float: left;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.select_num p {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	float: left;
+}
+
+.select_num #kc_num {
+	float: none;
+	margin-right: 0;
+}
+
+.goods_buy {
+	margin-top: 15px;
+	position: relative;
+}
+
+.goods_buy #now_buy,
+#add_car {
+	background-color: #f60;
+	margin-left: 50px;
+	font-size: 16px;
+	color: #fff;
+	width: 150px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	border: 1px solid #ff6600;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.goods_buy #add_car {
+	color: #ff6600;
+	background-color: #fff;
+	margin-left: 5px;
+}
+
+
+/*购物车动画图片*/
+
+.car_img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 65px;
+	margin-top: 35px;
+}

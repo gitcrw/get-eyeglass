@@ -1,22 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
     <title>详情页</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/content.css">
-        <!-- <link rel="stylesheet" href="../css/login.css"> -->
+        <link rel="stylesheet" href="../css/detail.css">
     </head>
     <body>
         <div id="ajax_top"></div>
         <div id="ajax_header"></div>
+
+        <div id="good_content" class="content">
+            <div class="good_left">
+                <div id="fdj">
+                    <div id="pic">
+                        <img id="picimg" />
+                        <div id="box"></div>
+                    </div>
+                    <div id="bigPic">
+                        <img id="bigimg" />
+                    </div>
+                </div>
+                <div class="picul">
+                    <!-- <img src="../image/1.jpg" /> -->
+                </div>
+            </div>
+            <div class="good_right">
+                <div class="details_top_name">
+                    <span id="goods_name"></span>
+                </div>
+                <div class="details_info">
+                    <div class="detail_info_price">
+                        <span>参考价:</span>
+                        <span class="now_price"></span>
+                        <span class="prev_price" style="text-decoration:line-through"></span>
+                        <span>立即节省:</span>
+                        <span class="js_price"></span>
+                    </div>
+                    <div class="jks"><span>进口税:</span><span class="jks_who">商家承担</span></div>
+                    <div class="fhd"><span>发货地:</span><span class="fhd_where"></span></div>
+                    <div class="goods_id"><span >商品编号:</span><span id="goods_id"></span><span></span></div>
+                </div>
+                <div class="select_color">
+                    <span>选择颜色:</span>
+                    <ul>
+                        <li><img src="../image/15145.jpg"/><i></i><div></div></li>
+                        <li><img src="../image/15145.jpg"/><div></div></li>
+                        <li><img src="../image/15145.jpg"/><div></div></li>
+                        <li><img src="../image/15145.jpg"/><div></div></li>
+                        <li><img src="../image/15145.jpg"/><div></div></li>
+                        <li><img src="../image/15145.jpg"/><div></div></li>
+                    </ul>
+                </div>
+                <div class="select_num" onselectstart="return false">
+                    <span>数量:</span>
+                    <div class="minus">-</div>
+                    <input type="text" value="1" />
+                    <div class="add">+</div>
+                    <p>(库存:<span id="kc_num"></span>)</p>
+                </div>
+                <div class="goods_buy">
+                    <a href="car.html" target="_blank"><input type="button" value="立即购买" id="now_buy" /></a>
+                    <input type="button" value="加入购物车" id="add_car" />
+                </div>
+            </div>
+        </div>
     </body>
     <script src="../../lib/jquery-1.10.1.min.js"></script>
     <!-- <script src="../js/login.js"></script> -->
-    <script type="text/javascript">
-        (function() {
-            $('#ajax_top').load('modelhtml/top.html');
-            $('#ajax_header').load('modelhtml/main_header.html');
-        })()
-    </script>
+    <script src="../js/detail.js"></script>
 </html>
+<pre class='xdebug-var-dump' dir='ltr'>
