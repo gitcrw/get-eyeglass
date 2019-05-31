@@ -104,6 +104,7 @@
 					if(now.next().val() <= 1) {
 						var ok = confirm('你确定要删除吗');
 						if(ok) {
+							
 							(now.parent().parent().parent()).remove();
 							$.ajax({
 								type: 'post',
@@ -116,7 +117,10 @@
 									delete: 'delete'
 								},
 								success: function(str) {
-
+									checkgoods();
+									$('#total_money').html(total());
+									$('#end_price').html(total());
+									$('#goods_num').html(allnum(0));
 								}
 							})
 						}
@@ -137,6 +141,7 @@
 
 							}
 							now.next().val(str);
+							
 						}
 					})
 					num = 0;
@@ -286,5 +291,19 @@
 		alert('你还没有登录！')
 
 	}
-
+//		function refresh() {
+//			$.ajax({
+//				type: 'post',
+//				url: '../api/re.php',
+//				success :function(str) {
+//					if(str == 'window.location.reload()') {
+//						window.location.reload();
+//					}
+//				}
+//			})
+//		}
+// 	//定时刷新购物车
+// 	refresh();
+// 	var car_timer = setInterval(refresh,1000);
+	
 })()

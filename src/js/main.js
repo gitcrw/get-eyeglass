@@ -282,11 +282,9 @@
 		if(getCookie('login')) {
 			$.ajax({
 				type: 'post',
-				url: '../api/addcar.php',
+				url: '../api/carallnum.php',
 				data: {
 					userphone: getCookie('login'),
-					gid: '',
-					num: ''
 				},
 				success: function(str) {
 					if(str == '') {
@@ -303,7 +301,7 @@
 	}
  	//定时刷新购物车
  	refresh();
- 	var car_timer = setInterval(refresh,5000);
+ 	var car_timer = setInterval(refresh,1000);
 	function getCookie(key) {
 		var str = document.cookie;
 		var arr = str.split('; ');

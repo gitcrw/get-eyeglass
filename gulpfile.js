@@ -92,9 +92,9 @@ gulp.task('htmlmin',function() {
         minifyJS: true,//压缩页面JS
         minifyCSS: true//压缩页面CSS
   };
-  return gulp.src('src/html/demo.html')
+  return gulp.src('src/html/modelhtml/main_header.html')
   			 .pipe(minifyhtml(options))
-  			 .pipe(gulp.dest('dist/html'));
+  			 .pipe(gulp.dest('dist/html/modelhtml'));
 });
 
 //2.压缩css
@@ -120,12 +120,12 @@ var minifyjs = require('gulp-uglify');
 var babel = require('gulp-babel');
 
 gulp.task('jsmin',function() {
-	return gulp.src('src/js/common.js')
+	return gulp.src('src/js/car.js')
 				.pipe(babel({//es6转es5
 					'presets' : ['es2015']
 				}))
 				.pipe(minifyjs())//压缩js
-				.pipe(rename('common.min.js'))//重命名
+//				.pipe(rename('common.min.js'))//重命名
 				.pipe(gulp.dest('dist/js'));//ES6不能直接压缩，需要先转成es5
 });
 
@@ -165,14 +165,14 @@ gulp.task('concat',function(){
 var imagemin=require('gulp-imagemin');
 
 gulp.task('imgmin',function(){
-  return gulp.src('src/img/*.{png,jpg,gif,ico}')
+  return gulp.src('src/image/*.{png,jpg,gif,ico}')
   			 .pipe(imagemin())
   			 .pipe(gulp.dest('dist/img'));
 });
 
 //中等压缩
 gulp.task('imgmin2', function () {
-    gulp.src('src/img/*.{png,jpg,gif,ico}')
+    gulp.src('src/image/*.{png,jpg,gif,ico}')
         .pipe(imagemin({
             optimizationLevel: 7, //类型：Number  默认：3  取值范围：0-7（优化等级）
             progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
@@ -186,7 +186,7 @@ gulp.task('imgmin2', function () {
 var pngquant = require('imagemin-pngquant');
  
 gulp.task('testImagemin', function () {
-    gulp.src('src/img/*.{png,jpg,gif,ico}')
+    gulp.src('src/image/*.{png,jpg,gif,ico}')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],//不要移除svg的viewbox属性

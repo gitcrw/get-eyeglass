@@ -1,0 +1,55 @@
+<style>#top{width:100%;height:26px;line-height:26px;background:#f2f2f2;border:1px solid #e5e5e5;border-top:none}#top #top_info{overflow:visible}#top #top_info>ul>li{float:left}#top li a{color:#666}#top_left li:nth-child(1){margin-right:15px;padding:0 0 0 22px;background:url(../image/tubiao.png) no-repeat 2px 5px}#top_left li:nth-child(2){color:#999;margin-right:5px}#top_left li:nth-child(3) a{margin-right:5px}#top_right{float:right;height:26px}#top_right li:nth-child(1){margin-top:1px}#top_right li:nth-child(2){margin-left:5px;padding-left:10px;padding-right:5px;border:1px solid transparent;position:relative;height:26px}#top_right li:nth-child(2):hover{background:#fff;border:1px solid #ebebeb}#top_right li:nth-child(2) div{display:none;position:absolute;width:80px;left:0;padding-left:10px;top:24px;box-sizing:border-box;z-index:100}#top_right li:nth-child(2):hover div{display:block;background:#fff;border:1px solid #ebebeb}#top_right li:nth-child(2) div a:hover{text-decoration:underline}#top_right li:nth-child(2) i,#top_right li:nth-child(3) i{margin-left:10px;width:7px;height:4px;display:inline-block;margin-bottom:2px;background:url(../image/tubiao.png) no-repeat 0 -27px}#top_right li:nth-child(3){padding-left:10px;padding-right:5px;border:1px solid transparent;position:relative}#top_right li:nth-child(3):hover{background:#fff;border:1px solid #ebebeb}#top_right li:nth-child(3) div{background:#fff;display:none;position:absolute;width:100%;left:0;top:24px;border-top:1px solid #ebebeb;padding-left:10px;box-sizing:border-box;z-index:100}#top_right li:nth-child(3):hover div{display:block}#top_right li:nth-child(3) div a:hover{text-decoration:underline}#top_right li:nth-child(4){margin-left:5px}#top_right li:nth-child(4) span{display:inline-block;float:left;margin-right:5px;color:#e5e5e5}#top_right li:nth-child(4) i{background:url(../image/tubiao.png) no-repeat 3px -42px;width:24px;height:26px;display:inline-block;float:left}#top_right li:nth-child(5){margin-left:10px;border-left:1px solid #e9e9e9;position:relative}#top_right li:nth-child(5) div{display:none;background:#000;width:200px;height:210px;position:absolute;top:15px;left:-50px;background:url(../image/tubiao.png) no-repeat 0 -140px;z-index:100}#top_right li:nth-child(5):hover div{display:block}#top_right li:nth-child(5) i{background:url(../image/tubiao.png) no-repeat 0 -67px;width:20px;height:26px;display:inline-block;float:left}#top_right li:nth-child(6){margin-left:30px}#top #top_info a:hover{color:tomato}#top_car{color:#f40}</style><div id="top"><div id="top_info" class="content"><ul id="top_left"><li><a href="">收藏可得网</a></li><li id="welcome">您好，欢迎光临可得眼镜网！</li><li><a href="login.html" id="top_login">登录</a> <a href="register.html" id="top_register">[免费注册]</a></li></ul><ul id="top_right"><li><a href="">我的优惠券</a></li><li><a href="">我的可得</a><i></i><div><span><a href="">我的订单</a></span><br><span><a href="">我的收藏</a></span><br><span><a href="">积分兑换</a></span><br><span><a href="">我的验光单</a></span></div></li><li><a href="">帮助中心</a><i></i><div><span><a href="">常见问题</a></span><br><span><a href="">退货换货</a></span><br><span><a href="">快递查询</a></span><br><span><a href="">眼镜学堂</a></span><br><span><a href="">优惠券使用</a></span><br><span><a href="">投诉建议</a></span><br><span><a href="">网站地图</a></span></div></li><li><span>|</span><i></i> <a href="car.html" target="_blank">购物车<b id="top_car">0</b>件</a></li><li><i></i> <a href="">手机版</a><div></div></li><li><a href="">客服电话：4006-20-20-20 ( 8:30-23:45 )</a></li></ul></div></div><script>(function() {
+		function setCookie(key, val, iday) {
+			var now = new Date();
+			now.setDate(now.getDate() + iday);
+			document.cookie = key + '=' + val + ';expires=' + now + ';path=/';
+		}
+
+		function getCookie(key) {
+			var str = document.cookie;
+			var arr = str.split('; ');
+			for(var i of arr) {
+				var arr2 = i.split('=');
+				if(key == arr2[0]) {
+					return arr2[1];
+				}
+			}
+		}
+
+		function removeCookie(key) {
+			setCookie(key, '', -1);
+		}
+
+		if(getCookie('login')) {
+			$('#welcome').html(getCookie('login').slice(0, 6) + '...您好，欢迎来可得！');
+			$('#top_login').html('[退出]').click(function() {
+				removeCookie('login');
+				console.log($(this).attr('href', ''));
+			});
+			$('#top_register').css('display','none');
+		}
+
+		function refresh() {
+			if(getCookie('login')) {
+				$.ajax({
+					type: 'post',
+					url: '../api/carallnum.php',
+					data: {
+						userphone: getCookie('login'),
+					},
+					success: function(str) {
+						if(str == '') {
+							// $('#car_num').html(0);
+						} else {
+							$('#top_car').html(str);
+						}
+
+					}
+				})
+				
+			}
+		}
+		//定时刷新购物车
+		refresh();
+		var car_timer = setInterval(refresh, 500);
+	})()</script>

@@ -202,9 +202,12 @@
 			//购物车动画
 			var buyok = true;
 			$('#add_car').on('click', function() {
+				var kuncun = $('#kc_num').html();
 				kuncun = $('#kc_num').html() - 0;
 				if(getCookie('login')) {
 					if(buyok) {
+						//刷新购物车页面
+						
 						buyok = false;
 						var buy_num = $('.select_num input').val();
 						if(buy_num > kuncun) {
